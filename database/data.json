@@ -1,0 +1,18 @@
+{
+  "tb_users": [
+    {
+      "username": "admin",
+      "password": "123",
+      "id": 1
+    }
+  ],
+  "tb_post": [],
+  "tb_listtintuc": [
+    {
+      "image": null,
+      "title": "giangdh21",
+      "content": "giang dep zai ",
+      "id": 2
+    }
+  ]
+}
