@@ -44,7 +44,7 @@ const Newpost = (prop) => {
   const Saveproduct = () => {
     let objpots = { image: img_source, title: title, content: content }
 
-    let url_api = "http://192.168.0.100:3000/tb_listtintuc"
+    let url_api = "http://172.20.10.6:3000/tb_listtintuc"
     fetch(url_api, {
       method: 'POST',
       headers: {

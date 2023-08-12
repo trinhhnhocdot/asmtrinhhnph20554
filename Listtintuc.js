@@ -8,13 +8,11 @@ const Listtintuc = (props) => {
 
     const getListpro = async () => {
         
-        let url_api ="http://10.24.50.237:3000/tb_listtintuc"
+        let url_api ="http://172.20.10.6:3000/tb_listtintuc"
         try {
             const response = await fetch(url_api); // load dữ liệu 
             const json = await response.json();// chuyển dữ liệu sang json
             setdssp(json)// đổ dữ liệu vào state
-
-
         } catch (error) {
             console.error(error);
         } finally {

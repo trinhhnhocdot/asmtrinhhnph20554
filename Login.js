@@ -26,7 +26,7 @@ const Login = (props) => {
     }
     // thực hoeenj fech để lấy dữ liệu về 
     
-    let url_check_Login = "http://192.168.1.10:3000/tb_users?username=" + username;
+    let url_check_Login = "http://172.20.10.6:3000/tb_users?username=" + username;
        fetch(url_check_Login)
       .then((res) => { return res.json(); })
       

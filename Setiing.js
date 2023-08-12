@@ -12,7 +12,7 @@ const Setiing = (props) => {
 
   const getlistuser = async () => {
 
-    let url_user = "http://10.24.25.184:3000/tb_users"
+    let url_user = "http://172.20.10.6:3000/tb_users"
     try {
       const response = await fetch(url_user);
 
@@ -29,7 +29,7 @@ const Setiing = (props) => {
   const render_user = ({ item }) => {
 
     const xoauser = () => {
-      let url_xoa = "http://10.24.25.184:3000/tb_users/" + item.id;
+      let url_xoa = "http://172.20.10.6:3000/tb_users/" + item.id;
       fetch(url_xoa, {
         method: 'DELETE',
         headers: {

@@ -25,7 +25,7 @@ const Signup = (props) => {
       }
     // tạo đối tượng dữ liệu 
     let objuser = { username: newuser, password: newpass };
-    let url_aip = "http://192.168.0.106:3000/tb_users";
+    let url_aip = "http://172.20.10.6:3000/tb_users";
 
     fetch(url_aip, {
         method: 'POST',

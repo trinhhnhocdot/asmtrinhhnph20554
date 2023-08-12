@@ -23,7 +23,7 @@ const Home = (props) => {
 
     // http://10.24.25.184:3000/tb_listtintuc
     
-    let url_api = "http://192.168.1.10:3000/tb_listtintuc"
+    let url_api = "http://172.20.10.6:3000/tb_listtintuc"
     try {
       const response = await fetch(url_api); // load dữ liệu 
       const json = await response.json();// chuyển dữ liệu sang json
@@ -36,9 +36,10 @@ const Home = (props) => {
     }
   }
 
+  
   const renderproduct = ({ item }) => {
     const xoabai = () => {
-      let url_xoa = "http://192.168.1.10:3000/tb_listtintuc/" + item.id;
+      let url_xoa = "http://172.20.10.6:3000/tb_listtintuc/" + item.id;
       fetch(url_xoa, {
         method: 'DELETE',
         headers: {
@@ -92,7 +93,7 @@ const Home = (props) => {
 
     const Updateproduct = () => {
       let objpots = { image: img_source, title: title, content: content }
-      let url_api = "http://192.168.1.10:3000/tb_listtintuc/" + item.id
+      let url_api = "http://172.20.10.6:3000/tb_listtintuc/" + item.id
       fetch(url_api, {
         method: 'PUT',
         headers: {
